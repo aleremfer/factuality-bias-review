@@ -1,14 +1,24 @@
-# QA Linguistic Checklist
+# Factuality & Bias Review
 
-This repository includes an internal QA checklist for reviewing multilingual AI-generated content, with a focus on English and Spanish.
+This repository collects systematic evaluations of factual inconsistencies and bias patterns in large language models (LLMs), across different domains and prompts.
 
-The checklist is designed to help evaluators ensure:
-- Clarity and fluency in both languages
-- Accurate and natural translations
-- Consistency in tone, formatting, and terminology
-- Absence of hallucinations or cultural missteps
-- Proper handling of inclusive and respectful language
+Our goal is to document, compare, and analyze how LLMs handle:
+- ✅ Factual accuracy across contexts
+- ✅ Implicit and explicit biases
+- ✅ Cultural, educational, and geographic assumptions
+- ✅ Model-specific hallucinations
 
-🧪 Ideal for use in LLM evaluation projects or content review pipelines.
+## 📁 Structure
 
-📋 A downloadable QA template will be added soon.
+Each subfolder focuses on a specific bias or factuality issue:
+
+- `geographic-hallucinations/`: Confusions between places with similar names or incorrect geographic inferences.
+- `historical-figures/`: Misrepresentations or bias in biographical prompts.
+- `gender-stereotypes/`: Subtle or overt gender-related bias across various contexts.
+- `majority-bias/`: Overgeneralization favoring majority cultures, views, or perspectives.
+
+Additional case studies will be added regularly. All examples are documented with prompt → output pairs and brief annotations for reproducibility and future benchmarking.
+
+## 🧪 Coming soon
+Evaluation scripts and scoring templates for reproducible benchmarking and cross-model comparisons.
+
