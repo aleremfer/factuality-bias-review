@@ -21,5 +21,5 @@ Each case includes:
 - 🧭 Suggested mitigation strategies (when relevant)
 - 🔎 Tags for categorization and future benchmarking
 
-We welcome contributions of well-structured cases from any region or model.
+
 
