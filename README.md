@@ -21,6 +21,8 @@ This repository explores bias as a **model behavior pattern**, particularly in a
 These biases often appear **even when no explicit hallucination or policy violation occurs**.
 
 ---
+The categories below are intentionally limited and conceptually distinct, 
+focusing on bias as a reasoning tendency rather than a normative or ethical issue.
 
 ## 🧩 Bias categories
 
@@ -54,3 +56,4 @@ factuality-bias-review/
 │
 └─ README.md
 
+This repository prioritizes depth, interpretability, and conceptual clarity over coverage or scale.
