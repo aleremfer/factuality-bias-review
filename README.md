@@ -1,24 +1,56 @@
 # Factuality & Bias Review
 
-This repository collects systematic evaluations of factual inconsistencies and bias patterns in large language models (LLMs), across different domains and prompts.
+This repository documents **structural, epistemic, and cultural biases** observed in the outputs of large language models (LLMs).
 
-Our goal is to document, compare, and analyze how LLMs handle:
-- ✅ Factual accuracy across contexts
-- ✅ Implicit and explicit biases
-- ✅ Cultural, educational, and geographic assumptions
-- ✅ Model-specific hallucinations
+It does **not** focus on political, demographic, or fairness-related bias.  
+Instead, it examines how well-aligned, policy-compliant models can still produce **systematic distortions affecting truthfulness, reasoning, and cultural grounding**.
 
-## 📁 Structure
+The goal is to analyze **recurring cognitive tendencies** in LLM behavior — not isolated mistakes — through carefully documented prompt → output cases.
 
-Each subfolder focuses on a specific bias or factuality issue:
+---
 
-- `geographic-hallucinations/`: Confusions between places with similar names or incorrect geographic inferences.
-- `historical-figures/`: Misrepresentations or bias in biographical prompts.
-- `gender-stereotypes/`: Subtle or overt gender-related bias across various contexts.
-- `majority-bias/`: Overgeneralization favoring majority cultures, views, or perspectives.
+## 🎯 Scope and focus
 
-Additional case studies will be added regularly. All examples are documented with prompt → output pairs and brief annotations for reproducibility and future benchmarking.
+This repository explores bias as a **model behavior pattern**, particularly in areas such as:
 
-## 🧪 Coming soon
-Evaluation scripts and scoring templates for reproducible benchmarking and cross-model comparisons.
+- Epistemic preferences (plausibility over truth)
+- Frequency and majority effects in training data
+- Cultural anchoring and implicit contextual assumptions
+- Confidence calibration under uncertainty
+
+These biases often appear **even when no explicit hallucination or policy violation occurs**.
+
+---
+
+## 🧩 Bias categories
+
+Current bias categories include:
+
+- **Epistemic Bias**  
+  Tendency to favor coherent or plausible answers over verified truth, especially under ambiguity.
+
+- **Majority / Frequency Bias**  
+  Preference for the most common, popular, or statistically dominant interpretation rather than the correct or context-specific one.
+
+- **Cultural Anchoring Bias**  
+  Implicit assumptions based on anglocentric, mainstream, or dominant cultural frameworks, leading to misinterpretation of local or minority contexts.
+
+- **Confidence Calibration Bias**  
+  Mismatch between the certainty expressed by the model and the actual strength of the available evidence.
+
+Each category is documented through a small number of **highly annotated cases**, rather than large datasets.
+
+---
+
+## 📁 Repository structure
+
+```text
+factuality-bias-review/
+│
+├─ epistemic-bias/
+├─ majority-bias/
+├─ cultural-anchoring-bias/
+├─ confidence-calibration-bias/
+│
+└─ README.md
 
